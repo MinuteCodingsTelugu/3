@@ -26,32 +26,32 @@ class Var:
 
     # Telegram Credentials
 
-    API_ID = config("API_ID", default=6, cast=int)
-    API_HASH = config("API_HASH", default="eb06d4abfb49dc3eeb1aeb98ae0f581e")
-    BOT_TOKEN = config("BOT_TOKEN", default=None)
+    API_ID = config("API_ID", default=16978078, cast=int)
+    API_HASH = config("API_HASH", default="91ccaf748f031b656bbf64ff47f990e3")
+    BOT_TOKEN = config("BOT_TOKEN", default="8155621239:AAGZF_wN_jXkK3fEOgzCHM5a19SUVFhLf4s")
     SESSION = config("SESSION", default=None)
 
     # Database Credentials
 
-    MONGO_SRV = config("MONGO_SRV", default=None)
+    MONGO_SRV = config("MONGO_SRV", default=mongodb+srv://leech:leech@cluster0.dfgruri.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0)
 
     # Channels Ids
 
-    BACKUP_CHANNEL = config("BACKUP_CHANNEL", default=0, cast=int)
-    MAIN_CHANNEL = config("MAIN_CHANNEL", cast=int)
-    LOG_CHANNEL = config("LOG_CHANNEL", cast=int)
-    CLOUD_CHANNEL = config("CLOUD_CHANNEL", cast=int)
+    BACKUP_CHANNEL = config("BACKUP_CHANNEL", default=-1001945054800, cast=int)
+    MAIN_CHANNEL = config("MAIN_CHANNEL", default=-100235853218, cast=int)
+    LOG_CHANNEL = config("LOG_CHANNEL", default=-100267473745, cast=int)
+    CLOUD_CHANNEL = config("CLOUD_CHANNEL", default=-100235858844, cast=int)
     FORCESUB_CHANNEL = config("FORCESUB_CHANNEL", default=0, cast=int)
-    OWNER = config("OWNER", default=0, cast=int)
+    OWNER = config("OWNER", default=1872074304, cast=int)
 
     # Other Configs
 
     THUMB = config(
-        "THUMBNAIL", default="https://graph.org/file/ad1b25807b81cdf1dff65.jpg"
+        "THUMBNAIL", default="https://envs.sh/s/6mkCjdFJApbEYZX8stsBuA/r4q.jpg"
     )
     FFMPEG = config("FFMPEG", default="ffmpeg")
     CRF = config("CRF", default="27")
-    SEND_SCHEDULE = config("SEND_SCHEDULE", default=False, cast=bool)
+    SEND_SCHEDULE = config("SEND_SCHEDULE", default=True, cast=bool)
     RESTART_EVERDAY = config("RESTART_EVERDAY", default=True, cast=bool)
     LOG_ON_MAIN = config("LOG_ON_MAIN", default=False, cast=bool)
     FORCESUB_CHANNEL_LINK = config("FORCESUB_CHANNEL_LINK", default="", cast=str)
