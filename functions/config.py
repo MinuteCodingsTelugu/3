@@ -33,7 +33,7 @@ class Var:
 
     # Database Credentials
 
-    MONGO_SRV = config("MONGO_SRV", default=mongodb+srv://leech:leech@cluster0.dfgruri.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0)
+    MONGO_SRV = config("MONGO_SRV", default="mongodb+srv://leech:leech@cluster0.dfgruri.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
     # Channels Ids
 
