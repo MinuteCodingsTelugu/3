@@ -5,7 +5,7 @@ MAIN_CHANNEL=-1002335038787
 LOG_CHANNEL=-1002674737457
 CLOUD_CHANNEL=-1002358588449
 MONGO_SRV=mongodb+srv://leech:leech@cluster0.dfgruri.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-OWNER=107788010
+OWNER=1077880102
 BACKUP_CHANNEL=-1001945054800
 
 # Optional Environment Variable
