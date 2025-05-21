@@ -1,7 +1,7 @@
 # Mandatory Environment Variable
 
 BOT_TOKEN=8155621239:AAGZF_wN_jXkK3fEOgzCHM5a19SUVFhLf4s
-MAIN_CHANNEL=-1002358532189
+MAIN_CHANNEL=-1002335038787
 LOG_CHANNEL=-1002674737457
 CLOUD_CHANNEL=-1002358588449
 MONGO_SRV=mongodb+srv://leech:leech@cluster0.dfgruri.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
