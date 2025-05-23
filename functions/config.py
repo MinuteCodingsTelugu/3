@@ -54,13 +54,13 @@ MAIN_CHANNEL = config("MAIN_CHANNEL", default=-1002335038787, cast=int)
 LOG_CHANNEL = config("LOG_CHANNEL", default=-1002674737457, cast=int)
 CLOUD_CHANNEL = config("CLOUD_CHANNEL", default=-100235858844, cast=int)
 
-FORCESUB_CHANNEL = config("FORCESUB_CHANNEL", default=0, cast=int) OWNER = config("OWNER", default=1077880102, cast=int)
+FORCESUB_CHANNEL = config("FORCESUB_CHANNEL", default=0, cast=int) 
+OWNER = config("OWNER", default=1077880102, cast=int)
 
 # Other Configs
 
 THUMB = config(
-    "THUMBNAIL", default="https://envs.sh/s/6mkCjdFJApbEYZX8stsBuA/r4q.jpg"
-)
+    "THUMBNAIL", default="https://envs.sh/s/6mkCjdFJApbEYZX8stsBuA/r4q.jpg")
 FFMPEG = config("FFMPEG", default="ffmpeg")
 CRF = config("CRF", default="25")
 SEND_SCHEDULE = config("SEND_SCHEDULE", default=True, cast=bool)
