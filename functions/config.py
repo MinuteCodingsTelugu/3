@@ -54,7 +54,7 @@ class Var:
     SEND_SCHEDULE = config("SEND_SCHEDULE", default=True, cast=bool)
     RESTART_EVERDAY = config("RESTART_EVERDAY", default=True, cast=bool)
     LOG_ON_MAIN = config("LOG_ON_MAIN", default=False, cast=bool)
-    FORCESUB_CHANNEL_LINK = config("FORCESUB_CHANNEL_LINK", default="-1002656761774 -1002358532189 -1001526632511", cast=str)
+    FORCESUB_CHANNEL_LINK = config("FORCESUB_CHANNEL_LINK", default="-1002656761774 -1002358532189 -1001526632511 -1001657207796", cast=str)
 
     # Dev Configs
 
