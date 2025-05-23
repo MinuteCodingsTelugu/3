@@ -147,7 +147,7 @@ class Bot(TelegramClient):
             r = await self.user_client(
                 CreateChannelRequest(
                     title=title,
-                    about="Powered By github.com/kaif-00z/AutoAnimeBot",
+                    about="Powered By https://t.me/pspkbots",
                     megagroup=False,
                 )
             )
