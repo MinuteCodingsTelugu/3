@@ -24,7 +24,7 @@ General Public License for more details.
 
 License can be found in <
 
-https://github.com/kaif-00z/AutoAnimeBot/blob/main/LICENSE > .
+https://github.com/kaif-00z/AutoAnimeBot/blob/main/LICENSE >
 
 if you are using this following code then don't forgot to give proper
 
