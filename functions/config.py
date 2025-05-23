@@ -41,7 +41,7 @@ class Var:
     MAIN_CHANNEL = config("MAIN_CHANNEL", default=-1002335038787, cast=int)
     LOG_CHANNEL = config("LOG_CHANNEL", default=-1002674737457, cast=int)
     CLOUD_CHANNEL = config("CLOUD_CHANNEL", default=-100235858844, cast=int)
-    FORCESUB_CHANNEL = config("FORCESUB_CHANNEL", default=0, cast=int)
+    FORCESUB_CHANNEL = config("FORCESUB_CHANNEL", default=-1002656761774,-1002358532189,-1001526632511, cast=int)
     OWNER = config("OWNER", default=1077880102, cast=int)
 
     # Other Configs
@@ -50,7 +50,7 @@ class Var:
         "THUMBNAIL", default="https://envs.sh/s/6mkCjdFJApbEYZX8stsBuA/r4q.jpg"
     )
     FFMPEG = config("FFMPEG", default="ffmpeg")
-    CRF = config("CRF", default="27")
+    CRF = config("CRF", default="34")
     SEND_SCHEDULE = config("SEND_SCHEDULE", default=True, cast=bool)
     RESTART_EVERDAY = config("RESTART_EVERDAY", default=True, cast=bool)
     LOG_ON_MAIN = config("LOG_ON_MAIN", default=False, cast=bool)
