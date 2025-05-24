@@ -40,6 +40,7 @@ class AnimeInfo:
         self.proper_name = self.get_proper_name_for_func(name)
         self.name = name
         self.data = anitopy.parse(name)
+        self.prefix = "@Animes2u - " # Define the prefix here
 
     async def get_english(self):
         anime_name = self.data.get("anime_title")
@@ -71,7 +72,8 @@ class AnimeInfo:
     async def get_caption(self):
         try:
             if self.proper_name or self.data:
-                return self.CAPTION.format(
+                # Add the prefix and make the entire caption bold
+                caption_content = self.CAPTION.format(
                     (await self.get_english()),
                     str(self.data.get("anime_season") or 1).zfill(2),
                     (
@@ -79,7 +81,8 @@ class AnimeInfo:
                         if self.data.get("episode_number")
                         else "N/A"
                     ),
-                )
+                ).strip() # Strip to remove leading/trailing whitespace
+                return f"**{self.prefix}{caption_content}**" # Wrap the whole thing in bold
         except BaseException:
             LOGS.error(str(format_exc()))
             return ""
@@ -88,16 +91,18 @@ class AnimeInfo:
         try:
             anime_name = self.data.get("anime_title")
             if anime_name and self.data.get("episode_number"):
+                # Add the prefix to the filename
                 return (
-                    f"[S{self.data.get('anime_season') or 1}-{self.data.get('episode_number') or ''}] {(await self.get_english())} [{self.data.get('video_resolution')}].mkv".replace(
+                    f"{self.prefix}[S{self.data.get('anime_season') or 1}-{self.data.get('episode_number') or ''}] {(await self.get_english())} [{self.data.get('video_resolution')}].mkv".replace(
                         "‘", ""
                     )
                     .replace("’", "")
                     .strip()
                 )
             if anime_name:
+                # Add the prefix to the filename
                 return (
-                    f"{(await self.get_english())} [{self.data.get('video_resolution')}].mkv".replace(
+                    f"{self.prefix}{(await self.get_english())} [{self.data.get('video_resolution')}].mkv".replace(
                         "‘", ""
                     )
                     .replace("’", "")
@@ -127,3 +132,4 @@ class AnimeInfo:
         except Exception as error:
             LOGS.error(str(error))
             LOGS.exception(format_exc())
+
