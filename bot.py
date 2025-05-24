@@ -87,10 +87,10 @@ async def _start(event):
             f"**Enjoy Ongoing Anime's Best Encode 24/7 🫡**",
             buttons=[
                 [
-                    Button.url("👨‍💻 DEV", url="t.me/pspkbots"),
+                    Button.url("👨‍💻 DEV", url="t.me/PSPKADMINBOT"),
                     Button.url(
                         "💖 OPEN SOURCE",
-                        url="t.me/PSPKADMINBOT",
+                        url="t.me/pspkbots",
                     ),
                 ]
             ],
