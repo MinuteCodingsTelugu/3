@@ -50,4 +50,4 @@ class Var:
     FORCESUB_CHANNEL_LINK = config("FORCESUB_CHANNEL_LINK", default="https://t.me/Animes2u", cast=str)
 
     # Dev Configs
-    DEV_MODE = config("DEV_MODE", default=False, cast=bool)
+    DEV_MODE = config("DEV_MODE", default=True, cast=bool)
