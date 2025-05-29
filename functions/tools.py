@@ -1,19 +1,19 @@
-#    This file is part of the AutoAnime distribution.
-#    Copyright (c) 2025 Kaif_00z
+# This file is part of the AutoAnime distribution.
+# Copyright (c) 2025 Kaif_00z
 #
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, version 3.
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, version 3.
 #
-#    This program is distributed in the hope that it will be useful, but
-#    WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-#    General Public License for more details.
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# General Public License for more details.
 #
 # License can be found in <
 # https://github.com/kaif-00z/AutoAnimeBot/blob/main/LICENSE > .
 
-# if you are using this following code then don't forgot to give proper
+# if you are using this following code then don't forget to give proper
 # credit to t.me/kAiF_00z (github.com/kaif-00z)
 
 import asyncio
@@ -206,7 +206,7 @@ class Tools:
         if not total_frames:
             return False, "Unable to Count The Frames!"
         _progress = f"progress-{time.time()}.txt"
-       cmd = f'{Var.FFMPEG} -hide_banner -loglevel quiet -progress "{_progress}" -i "{dl}" -metadata "Encoded By=Animes2u" -preset ultrafast -c:v libx265 -crf {Var.CRF} -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? -threads {self.ffmpeg_threads} "{out}" -y'
+        cmd = f'{Var.FFMPEG} -hide_banner -loglevel quiet -progress "{_progress}" -i "{dl}" -metadata "Encoded By=Animes2u" -preset ultrafast -c:v libx265 -crf {Var.CRF} -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? -threads {self.ffmpeg_threads} "{out}" -y'
         process = await asyncio.create_subprocess_shell(
             cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
         )
@@ -258,7 +258,6 @@ class Tools:
 
     async def genss(self, file):
         process = subprocess.Popen(
-            # just for better codefactor rating :)
             [shutil.which("mediainfo"), file, "--Output=JSON"],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
